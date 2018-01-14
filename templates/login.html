@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .t1{
+            width: 100px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/static/common.css">
+
+</head>
+<body>
+<form action="/login/" method="post">
+{# 提交至名为/login(是个url),提交方法为post；注意若urls.py里是“login/”此处必须是“/login/”#}
+    <div>
+        <div class="t1">
+            <lable>用户名</lable>
+            <input type="text" name="user" placeholder="输入用户名"/>
+{#  属性name="user"定义提交至后台的数据时，k为user          #}
+        </div>
+        <div class="t1">
+            <lable>密码</lable>
+            <input type="text" name="pwd" placeholder="输入密码"/>
+        </div>
+        <div>
+            <input type="submit" value="提交">
+            <span style="background-color: red">{{ error_msg }}</span>
+            {# span无内容标签则撑不起来，即用户看不到任何东西；若error_msg有值，则用户即可看到此标签#}
+            {#Django会将此特殊字符串“{{ error_msg }}”进行替换           #}
+        </div>
+    </div>
+</form>
+
+
+<script src="/static/jquery.js"></script>
+
+
+</body>
+</html>
