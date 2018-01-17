@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'cmdb',            #选择自己事先创建好的数据库,名为cmdb
         'USER': 'root',
-        'PASSWORD': 'xxx',
+        'PASSWORD': 'welcoemcncs',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
