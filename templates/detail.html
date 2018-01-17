@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- server_detail会替换成对应视图函数中定义的server_detail -->
+    <!-- 替换的结果为，保存主机详细信息的字典 -->
+    <div><h3>{{ server_detail.name }}的详细信息：</h3></div>
+    <div>
+        <h5>主机名： {{ server_detail.name }}</h5>
+        <h5>IP地址： {{ server_detail.ip }}</h5>
+        <h5>ssh端口： {{ server_detail.sshport }}</h5>
+        <h5>位置： {{ server_detail.location }}</h5>
+    </div>
+
+
+</body>
+</html>

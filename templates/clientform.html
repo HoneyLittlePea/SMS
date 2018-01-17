@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{#<ul>#}
+{#获取keys#}
+{#    {% for i in dict.keys %}       #}
+{#        <li> {{  i  }}   </li>#}
+{#    {% endfor %}#}
+{#</ul>#}
+{##}
+{#<ul>#}
+{#获取vaules#}
+{#    {% for i in dict.values %}#}
+{#        <li> {{  i  }}   </li>#}
+{#    {% endfor %}#}
+{#</ul>#}
+{##}
+{#<ul>#}
+{#获取key和value，结果是元祖形式#}
+{#    {% for i in dict.items %}#}
+{#        <li> {{  i  }}   </li>#}
+{#    {% endfor %}#}
+{#</ul>#}
+{##}
+{#<ul>#}
+{#同时获取key和vaule#}
+{#    {% for k,v in dict.items %}#}
+{#        <li> {{  k  }} , {{ v }}  </li>#}
+{#    {% endfor %}#}
+{#</ul>#}
+
+
+
+
+    <form action="/userinfo.html" method="POST" enctype="multipart/form-data">
+        <div><input type="text" placeholder="Username" name="user"></div>
+        <div><input type="password" placeholder="Password" name="pwd"></div>
+    
+        <div><input type="radio" name="gender" value="Male">BOY</div>
+        <div><input type="radio" name="gender" value="Female">GIRL</div>
+
+        <div><input type="checkbox" name="Course" value="py">PYTHON</div>
+        <div><input type="checkbox" name="Course" value="dj">DJANGO</div>
+        <div><input type="checkbox" name="Course" value="JS">JAVASCRIPT</div>
+
+        <div><select name="city" id="">
+            <option value="BJ">BeiJing</option>
+            <option value="SH">ShangHai</option>
+            <option value="GZ">GuangZhou</option>
+        </select></div>
+
+        <div><select name="hobbies" multiple>
+            <option value="BK">Bascketball</option>
+            <option value="SC">Scoor</option>
+            <option value="TB">Tabenies</option>
+        </select></div>
+
+        <div><input type="file" name="upload"></div>
+
+        <div><input type="submit" value="submit"></div>
+</form>
+</body>
+</html>
