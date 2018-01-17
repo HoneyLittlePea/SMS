@@ -14,7 +14,9 @@
 
 </head>
 <body>
-<form action="{% url 'L' %}" method="post">
+{#<form action="{% url 'L' %}" method="post">#}
+<form action="{{ request.path_info }}" method="post">
+{#还可以使用关键字request.path_info（获取当前访问的地址），即就跳转到当前的地址#}
 {# 提交至名为/login(是个url),提交方法为post；注意若urls.py里是“login/”此处必须是“/login/”#}
     <div>
         <div class="t1">
